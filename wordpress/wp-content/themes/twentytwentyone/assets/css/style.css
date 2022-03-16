@@ -839,7 +839,7 @@ body {
        .contact-details{
           display: block;
       float: left;
-      margin-right: 5%;
+      /* margin-right: 5%; */
       font-size: 0.875em;
       line-height: 2.1;
   
@@ -847,14 +847,14 @@ body {
        .col2 {
       width: 47.5%;
   }
-  .contact-head{
-      font-weight: 400;
-      color: #222222!important;
-      font-size: 1.2em;
-   
-      line-height: 1.2;
-      margin: 0 0 20px;
-  }
+  .contact-head {
+    font-weight: 400;
+    color: #222222!important;
+    font-size: 14px;
+    font-family: serif;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
   .contact {
       background-color: #fafafa;
       padding: 70px;
@@ -926,15 +926,16 @@ body {
   .testimonial {
     margin: 0 0 40px;
     }
-  .testimonial-content {
-  background: #fafafa;
-  padding: 26px 26px 49px;
-  margin: 0;
-  transition: all 1s;
-  font-size: 0.859em;
-  line-height: 1.5;
-  letter-spacing: 0.6px;
-  }
+    .testimonial-content {
+        background: #fafafa;
+        padding: 26px 26px 49px;
+        margin: 0;
+        transition: all 1s;
+        font-size: 12px;
+        color: #919191;
+        line-height: 1.5;
+        letter-spacing: 0.6px;
+    }
   .testimonial-image {
   display: block;
   width: 70px;
@@ -943,7 +944,7 @@ body {
   }
   .testimonial-name {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 16px;
   margin: 0 0 5px;
   color: black;
   }
@@ -953,12 +954,13 @@ body {
   /* color: #222222; */
   }
   .testimonial-position {
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.65em;
-  }
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    color: #919191;
+}
   .testimonial:hover .testimonial-content {
   box-shadow: 0 1px 20px rgb(0 0 0 / 15%);
   }
@@ -966,13 +968,10 @@ body {
   display: flex;
   column-gap: 55px;
   }
+
   div#testimonials {
-  padding-bottom: 80px;
-  
-  padding-top: 72px;
-  
-  }
-  
+    background-color: #fff;
+}
    /* TESTINOMIAL SECTION CSS END  */
   
   
@@ -991,8 +990,7 @@ body {
     width: 47.5%;
    }
   
-   .service-col{
-       
+   .service-col {
     margin-bottom: 50px;
     position: relative;
     box-shadow: 0 1px 2px rgb(0 0 0 / 7%);
@@ -1001,47 +999,45 @@ body {
     background: #fff;
     transition: all 1s;
     display: flex;
-    flex-direction: row;
-  
-   }
+    flex-direction: column!important;
+}
    
   
-    .service-col .service-icon {
+   .service-col .service-icon {
     font-family: 'fontawesome';
     width: 40px;
     text-align: center;
     height: 40px;
     line-height: 40px;
     font-size: 40px;
-    /* position: absolute;
-    top: 50%;
-    margin: -20px 0 0 30px; */
-  
-   }
-   .service-col .service-body {
+}
+.service-col .service-body {
     /* margin-left: 100px; */
-    padding: 26px 26px 26px 0;
-  }
+    padding: 26px 26px 26px 26px;
+}
   
   .service {
-    width: 40%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .service-content {
-    margin: 0 0 10px;
-    font-size: 0.899em;
-  }
-  h4.service-title {
+    justify-content: flex-start;
+    padding: 18px 0px 0px 26px;
+}
+.service-content {
+    margin: 15px 0 10px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #919191;
+}
+h4.service-title {
     font-size: 1.3em;
     font-family: 'Hind';
     font-weight: 400;
     color: #222222;
-  }
-  .service-title a{
-    color:black;
-  }
+}
+.service-title a {
+    color: black;
+    font-size: 16px;
+}
   .service-col:hover {
     box-shadow: 0 1px 20px rgb(0 0 0 / 15%);
     -moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.15);

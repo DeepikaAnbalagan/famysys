@@ -12,10 +12,74 @@
  Text Domain:  twentytwentyone-child
 */
 
+
+
+/* //feature section */
+#features {
+    background-color: #fafafa;
+    padding: 58px;
+}
 .section-subtitle {
-    font-size: 0.5em!important;
-    margin-bottom: 12px!important;
-    opacity: 0.5!important;
-    position: relative!important;
+    font-size: 0.5em;
+    margin-bottom: 12px;
+    opacity: 0.5;
+    position: relative;
     display: inline-block;
+    font-size: 14px;
+}
+.heading {
+    font-size: 32px;
+    font-weight: 400;
+}
+.feature-title {
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #222222;
+    font-size: 14px;
+}
+.feature-content {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* //about */
+.about__title a {
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 400;
+}
+p.text-about {
+    margin-top: 20px;
+    font-family: system-ui;
+    font-size: 14px;
+    color: #919191;
+}
+.tagline {
+    padding: 145px 0;
+    text-align: center;
+    position:relative;
+    background-image:url(http://localhost/famysys_wp/famysys/wordpress/wp-content/uploads/2022/03/mm-2.jpg);
+    background-attachment: fixed;
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: transparent;
+}
+.tagline-title {
+    font-size: 1.5em;
+    margin: 55px 0 5px;
+}
+.tagline-content {
+    margin: 23px auto;
+    font-size: 1.5em;
+}
+/* //testimonial */
+.testimonial-position {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    color: #919191;
 }

@@ -12,23 +12,17 @@ body {
   line-height: 2px;
   font-size: 10px;
   padding: 0px;
-  padding: 9px;
+  padding: 3px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.navbar-expand-sm ul li a {
+.navbar-expand-sm a {
     font-size: 12px;
 	font-weight: 400;
     color: #918b8b;
     text-decoration: none;
     background-color: transparent;
-    display: inherit!important;
-    padding: 0.1rem 0.7rem;
 }
-.nav-top ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .nav-top {
  font-weight: 600;
   color: #919191;
@@ -43,7 +37,9 @@ body {
     color: #676767;
     padding: 10px 12px;
     margin: 0;
-    font-size: 15px;
+}
+#navbarSupportedContent ul li a:hover{
+    color:#00ABE3!important;
 }
 .collapse ul li a{
 /* font-family: 'Hind'; */
@@ -740,8 +736,8 @@ body {
       transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
   .bloggg {
-      display: flex;
-      column-gap: 27px;
+      /* display: flex;
+      column-gap: 27px; */
       
   }
   .col-div img{
@@ -839,13 +835,13 @@ body {
        .contact-details{
           display: block;
       float: left;
-      margin-right: 5%;
+      /* margin-right: 5%; */
       font-size: 0.875em;
       line-height: 2.1;
   
        }
        .col2 {
-      width: 47.5%;
+      width: 50%;
   }
   .contact-head{
       font-weight: 400;
@@ -862,9 +858,13 @@ body {
   .con-form:last-child {
       margin-right: 0;
   }
-  .contact-form-sec {
+  /* .contact-form-sec {
       display: flex;
-  }
+  } */
+  .contact-form-sec {
+    display: flex;
+    width: 100%;
+}
   input.form-controll ,textarea.form-controll {
       font-family: inherit;
       border: 1px solid transparent;
@@ -943,9 +943,12 @@ body {
   }
   .testimonial-name {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 16px;
   margin: 0 0 5px;
   color: black;
+  }
+  .con-form.col2.contact__form{
+    width: 50%;
   }
   h1, h2, h3, h4, h5, h6, .heading, .dark .heading, .header .site-title {
   font-family: 'Hind';
@@ -963,8 +966,8 @@ body {
   box-shadow: 0 1px 20px rgb(0 0 0 / 15%);
   }
   .testinomal {
-  display: flex;
-  column-gap: 55px;
+  /* display: flex;
+  column-gap: 55px; */
   }
   div#testimonials {
   padding-bottom: 80px;
@@ -987,12 +990,10 @@ body {
     transform: translateY(0px);
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1)
    }
-   .s-col{
-    width: 47.5%;
-   }
-  
-   .service-col{
-       
+   .s-col {
+    width: 30%;
+}
+.service-col {
     margin-bottom: 50px;
     position: relative;
     box-shadow: 0 1px 2px rgb(0 0 0 / 7%);
@@ -1001,10 +1002,8 @@ body {
     background: #fff;
     transition: all 1s;
     display: flex;
-    flex-direction: row;
-  
-   }
-   
+    flex-direction: column!important;
+}
   
     .service-col .service-icon {
     font-family: 'fontawesome';
@@ -1020,19 +1019,21 @@ body {
    }
    .service-col .service-body {
     /* margin-left: 100px; */
-    padding: 26px 26px 26px 0;
-  }
+    padding: 26px 26px 26px 26px;
+}
   
   .service {
-    width: 40%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .service-content {
-    margin: 0 0 10px;
-    font-size: 0.899em;
-  }
+    justify-content: flex-start;
+    padding: 18px 0px 0px 26px;
+}
+.service-content {
+    margin: 15px 0 10px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
   h4.service-title {
     font-size: 1.3em;
     font-family: 'Hind';
@@ -1216,33 +1217,4 @@ h1.pagetitle-title.heading {
 }
 .team-member:hover .team-member-body {
     box-shadow: 0 1px 20px rgb(0 0 0 / 15%);
-}
-
-
-/* //slider wp */
-.n2-ss-slider .n2-ss-slide--focus {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black!important;
-    opacity: 0.2!important;
-    z-index: -99999;
-}
-
-div#n2-ss-2 .n2-font-9ea5eb74c01e253897559eaa3c12f54d{
-    font-family: 'dashicons'!important;
-    color: #ffffff;
-    font-size: 356.25%;
-    text-shadow: none;
-    line-height: 1.5;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    text-align: center;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    font-weight: 500;
 }
