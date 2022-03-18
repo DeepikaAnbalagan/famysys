@@ -33,7 +33,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
 		 <div class="row" id="feat">
 		 <?php 
                    $args = array(  
-                    'post_type' => 'chooseus',
+                    'post_type' => 'Chooseus',
                     'post_status' => 'publish',
                     'order' => 'ASC',
                     'posts_per_page' => 6
@@ -107,7 +107,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
 			<div class="row">
 			<?php 
                    $args = array(  
-                    'post_type' => 'aboutus',
+                    'post_type' => 'AboutUs',
                     'post_status' => 'publish',
                     'order' => 'ASC',
                     'posts_per_page' => 6
@@ -174,7 +174,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
             <div class="row">
 			<?php 
                    $args = array(  
-                    'post_type' => 'services',
+                    'post_type' => 'Services',
                     'post_status' => 'publish',
                     'order' => 'ASC',
                     'posts_per_page' => 6
@@ -230,7 +230,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
              <div class="row"data-animate-in="up">
 			 <?php 
                    $args = array(  
-                    'post_type' => 'testimonials',
+                    'post_type' => 'Testimonials',
                     'post_status' => 'publish',
                     'order' => 'ASC',
                     'posts_per_page' => 6
@@ -273,7 +273,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
          <div class="row">
 		 <?php 
                    $args = array(  
-                    'post_type' => 'ourteam',
+                    'post_type' => 'Ourteam',
                     'post_status' => 'publish',
                     'order' => 'ASC',
                     'posts_per_page' => 6
@@ -325,37 +325,20 @@ echo do_shortcode('[smartslider3 slider="2"]');
 	    <div class="row">
        
                    <div class="col-lg-6 contact-details  contact__content" data-animate-in="up">
-				           <h5 class="contact-head">
+				           <!-- <h5 class="contact-head">
                       We’re Here To Help!</h5>
-                        <p class="contact-ad">Glider Technologies is designed to help your business safely transit into the digital age.</p>
+                        <p class="contact-ad">Famysys Technologies is designed to help your business safely transit into the digital age.</p>
                         <h5 class="contact-head">Send us a message and we will show you how.</h5>
                         <p class="contact-address"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<strong>Address:</strong>D2, No 32,33, Adhisri Apartments, Kothari Road, Nungambakkam,
                           Chennai – 600034</p>
                         <p class="contact-address"><i class="fa fa-phone"></i>&nbsp;&nbsp;<strong>Telephone:</strong> (+91) 908-739-4980</p>
-                        <p class="contact-address"><i class="fa fa-envelope"></i>&nbsp;&nbsp;<strong>Email:</strong> <a href="mailto:contact@gmail.com">famysys.com</a></p>
-                     </div>  
+                        <p class="contact-address"><i class="fa fa-envelope"></i>&nbsp;&nbsp;<strong>Email:</strong> <a href="mailto:contact@gmail.com">famysys.com</a></p> -->
+                        <?php dynamic_sidebar('custom address'); ?>
+                      </div>  
            
                     <div class="col-lg-6 con-form  contact__form"data-animate-in="up">
-                        <form>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput" class="con-label">Full Name</label>
-                                <input type="text" class="form-controll" id="formGroupExampleInput" >
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput2"  class="con-label">Company</label>
-                                <input type="text" class="form-controll" id="formGroupExampleInput2" >
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput2"  class="con-label">Email  Address</label>
-                                <input type="text" class="form-controll" id="formGroupExampleInput2" >
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput2" class="con-label" > Your Message</label>
-                                <textarea class="form-controll" id="formGroupExampleInput2"  rows="8"></textarea>
-                            </div>
-                            <input type="submit" value="Send message" class="cn-submit">
-                            </form>
-           
+                    
+                    <?php echo do_shortcode('[contact-form-7 id="240" title="contactform"]'); ?>
                         </div>
               </div>
 
@@ -365,6 +348,60 @@ echo do_shortcode('[smartslider3 slider="2"]');
 <!-- CONTACT FORM SECTION END -->
 
 
+<!-- BLOG SECTION START -->
+<div class="blog-section" id="blog-section">
+    <div class="container">
+        <div class="section-heading blog-heading"data-animate-in="up">
+             <div id="blog-subtitle" class="blog-subtitle section-subtitle">our blog</div>
+             <div class="section-title blog-title heading">Recent blog posts</div>
+          </div>
+  
+    <section id="content" class="content">
+		    <div class="row">
+        <?php 
+                   $args = array(  
+                    'post_type' => 'Blog',
+                    'post_status' => 'publish',
+                    'order' => 'ASC',
+                    'posts_per_page' => 6
+                    );
+                $loop = new WP_Query( $args ); 
+               while ( $loop->have_posts() ) : $loop->the_post(); 
+               ?>
+            <div class="blogg column-narrow col-lg-4"data-animate-in="up">
+                <div class="col-div" data-animate-in="up">
+                    <img src="<?php the_field('blog_image');?>" class="blog-img">
+                </div>
+                <div class="bolg-content">
+                    <h2 class="blog-title"> <?php the_field('blog_title'); ?>  </h2>
+                </div>
+       <div class="post-byline">
+           <div class="post-date"><?php the_time( 'd F Y' ); ?></div>			
+                 <div class="post-category">
+                       <?php the_field('post_category');?>
+                    </div>					
+                 </div>
+                     <div class="blog-paragraph">
+                        <p class="blog-para"><?php the_field('blog_paragraph');?></p>
+                     </div>
+                    
+                      <button id="read-more"> <a href="<?php echo get_permalink($post->ID);?>">Read-More</a></button>
+                          <div class="post-comments"><a href="">1</a></div>
+
+                      </div>
+                      <?php
+            endwhile;
+            wp_reset_postdata(); 
+         ?>
+                   
+         
+       
+        </div>
+     </div>
+  </div>
+</div>
+
+<!-- BLOG SECTION END -->
 
 
 <?php
