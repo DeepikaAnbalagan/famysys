@@ -1215,3 +1215,69 @@ h1.pagetitle-title.heading {
 }
 
 
+/* //projects */
+
+.pro-section{
+    padding-top:30px;
+    padding-bottom:50px;
+}
+.card-img  img {
+transition: all 0.3s;
+border-radius: 8px;
+}
+.card-img {
+width: 100%;
+/* border-radius: calc(0.25rem - 1px); */
+border-radius: 8px;
+}
+.card {
+background-color: transparent;
+border: none;
+}
+.c-body {
+padding: 0;
+padding-top: 2rem;
+color: black;
+font-family: 'IBM Plex Sans', sans-serif;
+}
+.card-title {
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 1.5rem;
+color: black;
+}
+{
+
+}
+
+.mbr-text {
+font-style: normal;
+line-height: 1.6;
+
+font-size: 0.9rem;
+
+}
+p.card-text {
+color: #767676;
+}
+.card:hover img {
+box-shadow: 0 10px 55px 5px rgb(137 173 255 / 35%);
+}
+.red-more{
+order: 2;
+font-size: 0.9rem;
+
+padding-top: 23px;
+text-transform: uppercase;
+transition: padding 0.3s!important;
+border: none;
+}
+.red-more:after {
+content: ' \279D';
+}
+.red-more:hover:after{
+padding-right:10px;
+}
+.pro-heading{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color:black;
+}

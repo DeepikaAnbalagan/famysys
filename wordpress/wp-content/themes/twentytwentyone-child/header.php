@@ -77,7 +77,7 @@ wp_nav_menu( array(
 					<nav class="navbar navbar-expand-md navbar-light">
 					
 						<a class="navbar-brand" href="https://front.codes/" target="_blank">
-            <img class="logo-img" itemprop="logo" src="https://www.demos.machothemes.com/antreas/wp-content/uploads/sites/22/2018/11/antreas-logo.png" width="90" height="43" alt="Antreas">
+            <img class="logo-img" itemprop="logo" src="http://localhost/famysys_wp/famysys/wordpress/wp-content/uploads/2022/03/Group-2-scaled.jpg" width="90" height="43" alt="Antreas">
             </a>	
 						
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
